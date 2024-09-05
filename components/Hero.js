@@ -12,7 +12,6 @@ export default function Hero() {
     "#9400D3",
   ];
   return (
-    <section className="hero bg-white dark:bg-gray-900">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between px-4 py-16 md:py-32">
         <div className="max-w-lg">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-800 dark:text-white">
@@ -72,6 +71,5 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </section>
   );
 }
