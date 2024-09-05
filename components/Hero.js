@@ -48,7 +48,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="w-80 h-80 relative mt-10 md:mt-0">
-          <img src="/avatar_alt.png" alt="avatar" className="shadow" />
+          <img src={userData.avatarUrl} alt="avatar" className="shadow" />
 
           <div className="hidden lg:block relative mt-10 md:mt-0 md:ml-10">
             <div className="flex flex-row justify-between mt-4">

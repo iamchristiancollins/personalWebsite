@@ -2,7 +2,7 @@ const userData = {
     githubUsername: "iamchristiancollins",
     name: "Christian Collins",
     designation: "Software Developer",
-    avatarUrl: "/avatar.png",
+    avatarUrl: "/avatar_alt.png",
     email: "iamchristiancollins@gmail.com",
     phone: "+1 9046873838",
     address: "Birmingham, AL.",
