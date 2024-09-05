@@ -8,14 +8,14 @@ const userData = {
     address: "Birmingham, AL.",
     projects: [
       {
-        title: "PlaceholderTech",
-        link: "https://placeholdertech.in",
-        imgUrl: "/placeholdertech.png",
+        title: "Customer Support AI",
+        link: "https://customer-support-ai-two.vercel.app/login",
+        imgUrl: "/customersupport.png",
       },
       {
-        title: "Portfolio",
-        link: "https://manuarora.in",
-        imgUrl: "/portfolio.png",
+        title: "Inventory Management",
+        link: "https://inventory-management-sigma-six.vercel.app/",
+        imgUrl: "/inventory.png",
       },
     ],
     about: {
@@ -52,7 +52,7 @@ const userData = {
         desc: "Major in Computer Science with a CGPA of 4.0. Nobody asks this but it's okay.",
       },
     ],
-    resumeUrl:"TBD",
+    resumeUrl:"https://drive.google.com/file/d/1pAin08cwLh4AsvTjorkfDeAsmBoioD-m/view?usp=sharing",
     socialLinks: {
       instagram: "",
       twitter: "https://twitter.com/",
