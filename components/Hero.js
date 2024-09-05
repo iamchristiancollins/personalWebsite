@@ -12,7 +12,7 @@ export default function Hero() {
     "#9400D3",
   ];
   return (
-    <section className="hero dark:bg-gray-900">
+    <section className="hero bg-white dark:bg-gray-900">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between px-4 py-16 md:py-32">
         <div className="max-w-lg">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-800 dark:text-white">
@@ -48,19 +48,28 @@ export default function Hero() {
           </div>
         </div>
         <div className="w-80 h-80 relative mt-10 md:mt-0">
-          <img
-            src="/avatar.png"
-            alt="avatar"
-            className="w-80 h-80 object-cover rounded-full"
-          />
-          <RoughNotationGroup show={true}>
-            <RoughNotation
-              type="underline"
-              color={colors[Math.floor(Math.random() * colors.length)]}
-            >
-              <div className="absolute w-80 h-80 top-0 left-0 z-0"></div>
-            </RoughNotation>
-          </RoughNotationGroup>
+          <img src="/avatar_alt.png" alt="avatar" className="shadow" />
+
+          <div className="hidden lg:block relative mt-10 md:mt-0 md:ml-10">
+            <div className="flex flex-row justify-between mt-4">
+              <div className="flex flex-row space-x-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  className="bi bi-arrow-90deg-up"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M4.854 1.146a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L4 2.707V12.5A2.5 2.5 0 0 0 6.5 15h8a.5.5 0 0 0 0-1h-8A1.5 1.5 0 0 1 5 12.5V2.707l3.146 3.147a.5.5 0 1 0 .708-.708l-4-4z"
+                  />
+                </svg>
+                <p className="font-mono">That's me</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

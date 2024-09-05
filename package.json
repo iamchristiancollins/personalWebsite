@@ -9,12 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@nextui-org/react": "^2.4.6",
     "axios": "^1.7.7",
     "mini-css-extract-plugin": "^2.9.1",
-    "next": "14.2.8",
+    "next": "^14.2.8",
     "next-themes": "^0.3.0",
-    "react": "^18",
-    "react-dom": "^18",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-rough-notation": "^1.0.5",
     "webpack": "^5.94.0"
   },
