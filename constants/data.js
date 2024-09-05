@@ -54,8 +54,8 @@ const userData = {
     ],
     resumeUrl:"https://drive.google.com/file/d/1pAin08cwLh4AsvTjorkfDeAsmBoioD-m/view?usp=sharing",
     socialLinks: {
-      instagram: "",
-      twitter: "https://twitter.com/",
+      instagram: "https://instagram.com/iamchriscollins",
+      twitter: "https://twitter.com/iamchriscollins",
       linkedin: "https://linkedin.com/in/iamchristiancollins",
       github: "https://github.com/iamchristiancollins",
       facebook: "https://facebook.com/",
