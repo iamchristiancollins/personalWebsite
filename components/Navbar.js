@@ -48,7 +48,7 @@ export default function Navbar() {
             />
           </svg>
         </button>
-
+        
         <div className={`space-x-8 md:block ${isOpen ? "block" : "hidden"}`}>
           <Link
             href="/about"
