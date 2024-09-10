@@ -7,16 +7,17 @@ import Hero from "../components/Hero";
 import getLatestRepos from "@lib/getLatestRepos";
 import userData from "@constants/data";
 
+
 export default function Home({ repositories }) {
   return (
-    <ContainerBlock
-      title="Christian Collins - Student, Developer"
-      description="Building a personal site."
-    >
-      <Hero />
-      {/* <FavouriteProjects /> */}
-      <LatestCode repositories={repositories} />
-    </ContainerBlock>
+      <ContainerBlock
+        title="Christian Collins - Student, Developer"
+        description="Building a personal site."
+      >
+        <Hero />
+        {/* <FavouriteProjects /> */}
+        <LatestCode repositories={repositories} />
+      </ContainerBlock>
   );
 }
 
