@@ -8,6 +8,16 @@ const userData = {
     address: "Birmingham, AL.",
     projects: [
       {
+        title: "Trip Planner",
+        link: "https://github.com/iamchristiancollins/TripPlanner",
+        imgUrl: "/TripPlanner.png",
+      },
+      {
+        title: "AgriDrone",
+        link: "https://github.com/iamchristiancollins/AgriDrone",
+        imgUrl: "/AgriDrone.png",
+      },
+      {
         title: "Customer Support AI",
         link: "https://customer-support-ai-two.vercel.app/login",
         imgUrl: "/customersupport.png",
@@ -17,6 +27,7 @@ const userData = {
         link: "https://inventory-management-sigma-six.vercel.app/",
         imgUrl: "/inventory.png",
       },
+      
     ],
     about: {
       title:

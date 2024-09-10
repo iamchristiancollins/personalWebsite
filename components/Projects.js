@@ -14,7 +14,7 @@ export default function Projects() {
                         <img
                             src={project.imgUrl}
                             alt={project.title}
-                            className="rounded-lg shadow-lg"
+                            className="rounded-lg shadow-lg w-full h-64 object-cover"
                         />
                     </a>
                     <h1 className="text-2xl font-bold text-gray-500 dark:text-gray-400 text-center my-5">
