@@ -11,7 +11,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
     title: "Christian Collins - Developer, Student",
     description:
       "I am starting a new career as a Software Developer, get in touch with me if you want to know more.",
-    image: "avatar.png",
+    image: "avatar_alt.png",
     type: "website",
     ...customMeta,
   };
