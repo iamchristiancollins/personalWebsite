@@ -59,7 +59,7 @@ const userData = {
       linkedin: "https://linkedin.com/in/iamchristiancollins",
       github: "https://github.com/iamchristiancollins",
       facebook: "https://facebook.com/",
-      peerlist: "https://peerlist.io/",
+      peerlist: "https://peerlist.io/christianc",
     },
   };
   
