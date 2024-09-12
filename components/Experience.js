@@ -11,11 +11,11 @@ import {
 
 export default function Experience() {
   return (
-    <section className="bg-white dark:bg-gray-800">
-      <h1 className="text-6xl lg:text-9xl max-w-lg font-bold text-gray-500 my-20 md:my-10 md:text-white dark:text-gray-600 text-center lg:text-left">
+    <section className="bg-gray-800">
+      <h1 className="text-6xl lg:text-9xl max-w-lg font-bold text-gray-500 my-20 md:my-10 text-center lg:text-left">
         Experience
       </h1>
-      <h2 className="text-2xl text-gray-500 dark:text-gray-400 text-center mb-10">
+      <h2 className="text-2xl text-gray-400 text-center mb-10">
         Current
       </h2>
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -111,7 +111,7 @@ export default function Experience() {
           </CardFooter>
         </Card>
       </div>
-      <h2 className="text-2xl text-gray-500 dark:text-gray-400 text-center mb-10">
+      <h2 className="text-2xl text-gray-400 text-center mb-10">
         Previous
       </h2>
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">

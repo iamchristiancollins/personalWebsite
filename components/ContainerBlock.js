@@ -7,6 +7,8 @@ import Footer from "./Footer";
 export default function ContainerBlock({ children, ...customMeta }) {
   const router = useRouter;
 
+
+
   const meta = {
     title: "Christian Collins - Developer, Student",
     description:
@@ -44,7 +46,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-      <main className="bg-white dark:bg-gray-800 w-full">
+      <main className="bg-gray-800 w-full">
         <Navbar />
         <div>{children}</div>
         <Footer />
