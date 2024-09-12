@@ -14,13 +14,13 @@ export default function Hero() {
   return (
     <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between px-4 py-16 md:py-32">
       <div className="max-w-lg">
-        <h1 className="text-4xl md:text-6xl font-bold text-gray-800 dark:text-white">
+        <h1 className="text-4xl md:text-6xl font-bold text-white">
           Hi, I'm{" "}
-          <span className="text-indigo-600 dark:text-indigo-400">
+          <span className="text-indigo-400">
             {userData.name}
           </span>
         </h1>
-        <p className="text-base md:text-lg text-gray-600 dark:text-gray-400 my-4">
+        <p className="text-base md:text-lg text-gray-400 my-4">
           {userData.designation}{" "}
           <a
             href={`
@@ -42,7 +42,7 @@ export default function Hero() {
           <a
             href={userData.resumeUrl}
             target="_blank"
-            className="px-4 py-2 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 font-semibold rounded"
+            className="px-4 py-2 bg-gray-800 text-gray-200 font-semibold rounded"
           >
             Download Resume
           </a>

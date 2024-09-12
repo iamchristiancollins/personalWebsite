@@ -178,7 +178,7 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className="flex flex-col">
+        <div className="flex flex-col py-6">
           <Link href="/">
             <h1 className="font-semibold text-xl text-gray-100">
               {userData.name}
