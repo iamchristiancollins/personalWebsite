@@ -18,7 +18,7 @@ export default function Experience() {
       <h2 className="text-2xl text-gray-400 text-center mb-10">
         Current
       </h2>
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 text-white">
         <Card className="max-w-[400px]">
           <CardHeader className="flex gap-3">
             <Image
@@ -30,8 +30,8 @@ export default function Experience() {
             />
             <div className="flex flex-col">
               <p className="text-md">Software Developer</p>
-              <p className="text-small text-white">DarkTower</p>
-              <p className="text-small text-white">
+              <p className="text-small">DarkTower</p>
+              <p className="text-small">
                 February 2024-Present
               </p>
             </div>
@@ -62,10 +62,10 @@ export default function Experience() {
             />
             <div className="flex flex-col">
               <p className="text-md">Teaching Assistant</p>
-              <p className="text-small text-white">
+              <p className="text-small">
                 UAB Department of Computer Science
               </p>
-              <p className="text-small text-white">August 2023-Present</p>
+              <p className="text-small">August 2023-Present</p>
             </div>
           </CardHeader>
           <Divider />
