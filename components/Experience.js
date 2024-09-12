@@ -114,7 +114,7 @@ export default function Experience() {
       <h2 className="text-2xl text-gray-400 text-center mb-10">
         Previous
       </h2>
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 text-white">
         <Card className="max-w-[400px]">
           <CardHeader className="flex gap-3">
             <Image
