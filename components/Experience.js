@@ -30,8 +30,8 @@ export default function Experience() {
             />
             <div className="flex flex-col">
               <p className="text-md">Software Developer</p>
-              <p className="text-small text-default-500">DarkTower</p>
-              <p className="text-small text-default-500">
+              <p className="text-small text-white">DarkTower</p>
+              <p className="text-small text-white">
                 February 2024-Present
               </p>
             </div>
@@ -62,10 +62,10 @@ export default function Experience() {
             />
             <div className="flex flex-col">
               <p className="text-md">Teaching Assistant</p>
-              <p className="text-small text-default-500">
+              <p className="text-small text-white">
                 UAB Department of Computer Science
               </p>
-              <p className="text-small text-default-500">August 2023-Present</p>
+              <p className="text-small text-white">August 2023-Present</p>
             </div>
           </CardHeader>
           <Divider />
@@ -93,10 +93,10 @@ export default function Experience() {
             />
             <div className="flex flex-col">
               <p className="text-md">Student</p>
-              <p className="text-small text-default-500">
+              <p className="text-small text-white">
                 University of Alabama at Birmingham
               </p>
-              <p className="text-small text-default-500">August 2022-Present</p>
+              <p className="text-small text-white">August 2022-Present</p>
             </div>
           </CardHeader>
           <Divider />
@@ -126,10 +126,10 @@ export default function Experience() {
             />
             <div className="flex flex-col">
               <p className="text-md">Mathematics Instructor</p>
-              <p className="text-small text-default-500">
+              <p className="text-small text-white">
                 Creekside High School
               </p>
-              <p className="text-small text-default-500">
+              <p className="text-small text-white">
                 October 2014-June 2022
               </p>
             </div>
