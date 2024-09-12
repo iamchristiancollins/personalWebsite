@@ -37,8 +37,8 @@ const userData = {
         `My professional experience includes working as a software developer at DarkTower, where I maintain analytical tools and web scrapers, manage PostgreSQL databases, and contribute to enhancing our in-house website using React. Additionally, I serve as a Teaching Assistant for various courses including Algorithms and Data Structures, Computer Organization and Assembly Language, and Systems Programming, where I assist students in problem-solving and debugging, teach weekly labs, and provide individual tutoring.`,
         `I've strived to be engaged in the tech community as the president of the Association of Computing Machinery and a member of Women in Tech. I also attend regular AI meetups in Birmingham. My goal is to apply my diverse skills to contribute to innovative software solutions in a dynamic company.`,
       ],
-      currentProject: "This site",
-      currentProjectUrl: "https://www.iamchristiancollins.com",
+      currentProject: "a site for weather",
+      currentProjectUrl: "https://github.com/iamchristiancollins/weather",
     },
     experience: [
       {
