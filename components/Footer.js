@@ -6,7 +6,7 @@ export default function Footer() {
     <div className="bg-gray-900">
       <div className="max-w-6xl  mx-auto px-4 py-10 md:py-20">
         <div className="h-0.5 w-full bg-gray-700"></div>
-        <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between md:items-center mt-8">
+        <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between md:items-center mt-8 text-gray-300">
           <div>
             <p>&copy; Christian Collins. All Rights Reserved.</p>
           </div>
