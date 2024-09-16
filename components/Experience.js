@@ -1,17 +1,6 @@
 import React from "react";
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  defaultContent,
-  Accordion,
-  AccordionItem,
-  Avatar,
-  Image,
-  Divider,
-  Link,
-} from "@nextui-org/react";
+import { Accordion, AccordionItem, Avatar } from "@nextui-org/react";
+import { PlusCircleIcon, MinusCircleIcon } from "@heroicons/react/24/outline"; // Import the icons
 import data from "@constants/data";
 
 export default function Experience() {
@@ -22,42 +11,51 @@ export default function Experience() {
       </h1>
 
       <div className="w-full flex justify-center px-4 md:px-8">
-        {" "}
-        {/* Ensure it's centered */}
         <div className="w-full max-w-[80%]">
-          {" "}
-          {/* Set the accordion container to 80% of the screen */}
           <Accordion
             selectionMode="multiple"
-            selectionBehavior="toggle"
             className="flex flex-wrap gap-6 w-full"
           >
             {data.experience.map((item, index) => (
               <AccordionItem
-                className={`border-b border-gray-500 w-full md:w-[90%] mx-auto ${
-                  index === data.experience.length - 1 ? "border-none" : ""
-                }`}
                 key={index}
-                aria-label={
-                  data.experience[index].title +
-                  " | " +
-                  data.experience[index].company
-                }
+                aria-label={`${item.title} | ${item.company}`}
+                className="group" // Add the 'group' class here
                 startContent={
                   <Avatar
                     isBordered
                     color="primary"
                     radius="lg"
-                    src={data.experience[index].image}
+                    src={item.image}
                     className="w-20 h-20"
                   />
                 }
-                subtitle={data.experience[index].year}
+                subtitle={<p className="flex-wrap">{item.year}</p>}
                 title={
-                  data.experience[index].title +
-                  " | " +
-                  data.experience[index].company
+                  <div className="flex flex-1 flex-col">
+                    <p>
+                      {item.title} | {item.company}
+                    </p>
+                  </div>
                 }
+                indicator={
+                  <div className="relative">
+                    <PlusCircleIcon
+                      className="h-6 w-6 text-default-400 group-data-[open=true]:hidden"
+                      aria-hidden="true"
+                    />
+                    <MinusCircleIcon
+                      className="h-6 w-6 text-default-400 hidden group-data-[open=true]:block"
+                      aria-hidden="true"
+                    />
+                  </div>
+                }
+                classNames={{
+                  base: `w-full md:w-[90%] mx-auto`,
+                  heading: `border-b border-gray-500 ${
+                    index === data.experience.length - 1 ? "border-none" : ""
+                  }`,
+                }}
               >
                 {item.desc.map((line, idx) => (
                   <p key={idx} style={{ marginBottom: "10px" }}>
@@ -71,126 +69,4 @@ export default function Experience() {
       </div>
     </section>
   );
-}
-
-{
-  /* <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 text-white">
-        <Card className="max-w-[400px]">
-          <CardHeader className="flex gap-3">
-            <Image
-              alt="darktower logo"
-              height={40}
-              radius="sm"
-              src="https://media.licdn.com/dms/image/C510BAQGhXx5HbNWrLQ/company-logo_200_200/0/1519861747403?e=2147483647&v=beta&t=1CEMMSI-BXn6cF0gsDqsHNtNZdNdnE-RXvxa6_-wEZo"
-              width={40}
-            />
-            <div className="flex flex-col">
-              <p className="text-md">Software Developer</p>
-              <p className="text-small">DarkTower</p>
-              <p className="text-small">February 2024-Present</p>
-            </div>
-          </CardHeader>
-          <Divider />
-          <CardBody>
-            <p>
-              Help enhance in-house website features using React as well as work
-              with PostgreSQL databases, and maintaining analytical tools and
-              web scrapers in Docker and GitLab.
-            </p>
-          </CardBody>
-          <Divider />
-          <CardFooter>
-            <Link isExternal showAnchorIcon href="https://www.getdarktower.com">
-              Visit DarkTower's Website.
-            </Link>
-          </CardFooter>
-        </Card>
-        <Card className="max-w-[400px]">
-          <CardHeader className="flex gap-3">
-            <Image
-              alt="UAB logo"
-              height={40}
-              radius="sm"
-              src="https://content.sportslogos.net/logos/35/879/full/1518_uab_blazers-primary-2015.png"
-              width={40}
-            />
-            <div className="flex flex-col">
-              <p className="text-md">Teaching Assistant</p>
-              <p className="text-small">UAB Department of Computer Science</p>
-              <p className="text-small">August 2023-Present</p>
-            </div>
-          </CardHeader>
-          <Divider />
-          <CardBody>
-            <p>
-              Helped teach Algorithms and Data Structures, Computer Organization
-              and Assembly Language, and Systems Programming.
-            </p>
-          </CardBody>
-          <Divider />
-          <CardFooter>
-            <Link isExternal showAnchorIcon href="https://www.uab.edu">
-              Visit UAB's Website.
-            </Link>
-          </CardFooter>
-        </Card>
-        <Card className="max-w-[400px]">
-          <CardHeader className="flex gap-3">
-            <Image
-              alt="UAB logo"
-              height={40}
-              radius="sm"
-              src="https://content.sportslogos.net/logos/35/879/full/1518_uab_blazers-primary-2015.png"
-              width={40}
-            />
-            <div className="flex flex-col">
-              <p className="text-md">Student</p>
-              <p className="text-small text-white">
-                University of Alabama at Birmingham
-              </p>
-              <p className="text-small text-white">August 2022-Present</p>
-            </div>
-          </CardHeader>
-          <Divider />
-          <CardBody>
-            <p>Pursuing a Postbaccalaureate degree in Computer Science.</p>
-          </CardBody>
-          <Divider />
-          <CardFooter>
-            <Link isExternal showAnchorIcon href="https://www.uab.edu">
-              Visit UAB's Website.
-            </Link>
-          </CardFooter>
-        </Card>
-        <Card className="max-w-[400px]">
-          <CardHeader className="flex gap-3">
-            <Image
-              alt="Creekside logo"
-              height={40}
-              radius="sm"
-              src="https://1stplacesports.com/wp-content/uploads/2020/09/creekside-symbol-front.jpg"
-              width={40}
-            />
-            <div className="flex flex-col">
-              <p className="text-md">Mathematics Instructor</p>
-              <p className="text-small text-white">Creekside High School</p>
-              <p className="text-small text-white">October 2014-June 2022</p>
-            </div>
-          </CardHeader>
-          <Divider />
-          <CardBody>
-            <p>Taught AP Calculus AB and BC.</p>
-          </CardBody>
-          <Divider />
-          <CardFooter>
-            <Link
-              isExternal
-              showAnchorIcon
-              href="https://www-chs.stjohns.k12.fl.us/"
-            >
-              Visit Creekside's Website.
-            </Link>
-          </CardFooter>
-        </Card>
-      </div> */
 }

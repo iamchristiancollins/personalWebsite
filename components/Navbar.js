@@ -195,7 +195,7 @@ export default function Navbar() {
             className={`text-base ${
               router.asPath === "/about"
                 ? "font-bold text-gray-400"
-                  : "text-gray-300 font-normal "
+                : "text-gray-300 font-normal "
             }`}
           >
             About{" "}
@@ -220,7 +220,7 @@ export default function Navbar() {
             className={`text-base  ${
               router.asPath === "/projects"
                 ? "font-bold text-gray-400"
-                  : "text-gray-300 font-normal "
+                : "text-gray-300 font-normal "
             }`}
           >
             Projects
@@ -245,7 +245,7 @@ export default function Navbar() {
             className={`text-base  ${
               router.asPath === "/experience"
                 ? "font-bold text-gray-400"
-                  : "text-gray-300 font-normal "
+                : "text-gray-300 font-normal "
             }`}
           >
             Experience
@@ -270,7 +270,7 @@ export default function Navbar() {
             className={`text-base  ${
               router.asPath === "/contact"
                 ? "font-bold text-gray-400"
-                  : "text-gray-300 font-normal "
+                : "text-gray-300 font-normal "
             }`}
           >
             Contact
