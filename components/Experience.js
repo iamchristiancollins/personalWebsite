@@ -4,10 +4,15 @@ import {
   CardHeader,
   CardBody,
   CardFooter,
+  defaultContent,
+  Accordion,
+  AccordionItem,
+  Avatar,
   Image,
   Divider,
   Link,
 } from "@nextui-org/react";
+import data from "@constants/data";
 
 export default function Experience() {
   return (
@@ -15,10 +20,61 @@ export default function Experience() {
       <h1 className="text-6xl lg:text-9xl max-w-lg font-bold text-gray-500 my-20 md:my-10 text-center lg:text-left">
         Experience
       </h1>
-      <h2 className="text-2xl text-gray-400 text-center mb-10">
-        Current
-      </h2>
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 text-white">
+
+      <div className="w-full flex justify-center px-4 md:px-8">
+        {" "}
+        {/* Ensure it's centered */}
+        <div className="w-full max-w-[80%]">
+          {" "}
+          {/* Set the accordion container to 80% of the screen */}
+          <Accordion
+            selectionMode="multiple"
+            selectionBehavior="toggle"
+            className="flex flex-wrap gap-6 w-full"
+          >
+            {data.experience.map((item, index) => (
+              <AccordionItem
+                className={`border-b border-gray-500 w-full md:w-[90%] mx-auto ${
+                  index === data.experience.length - 1 ? "border-none" : ""
+                }`}
+                key={index}
+                aria-label={
+                  data.experience[index].title +
+                  " | " +
+                  data.experience[index].company
+                }
+                startContent={
+                  <Avatar
+                    isBordered
+                    color="primary"
+                    radius="lg"
+                    src={data.experience[index].image}
+                    className="w-20 h-20"
+                  />
+                }
+                subtitle={data.experience[index].year}
+                title={
+                  data.experience[index].title +
+                  " | " +
+                  data.experience[index].company
+                }
+              >
+                {item.desc.map((line, idx) => (
+                  <p key={idx} style={{ marginBottom: "10px" }}>
+                    {line}
+                  </p>
+                ))}
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+{
+  /* <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 text-white">
         <Card className="max-w-[400px]">
           <CardHeader className="flex gap-3">
             <Image
@@ -31,9 +87,7 @@ export default function Experience() {
             <div className="flex flex-col">
               <p className="text-md">Software Developer</p>
               <p className="text-small">DarkTower</p>
-              <p className="text-small">
-                February 2024-Present
-              </p>
+              <p className="text-small">February 2024-Present</p>
             </div>
           </CardHeader>
           <Divider />
@@ -62,9 +116,7 @@ export default function Experience() {
             />
             <div className="flex flex-col">
               <p className="text-md">Teaching Assistant</p>
-              <p className="text-small">
-                UAB Department of Computer Science
-              </p>
+              <p className="text-small">UAB Department of Computer Science</p>
               <p className="text-small">August 2023-Present</p>
             </div>
           </CardHeader>
@@ -110,11 +162,6 @@ export default function Experience() {
             </Link>
           </CardFooter>
         </Card>
-      </div>
-      <h2 className="text-2xl text-gray-400 text-center mb-10">
-        Previous
-      </h2>
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 text-white">
         <Card className="max-w-[400px]">
           <CardHeader className="flex gap-3">
             <Image
@@ -126,12 +173,8 @@ export default function Experience() {
             />
             <div className="flex flex-col">
               <p className="text-md">Mathematics Instructor</p>
-              <p className="text-small text-white">
-                Creekside High School
-              </p>
-              <p className="text-small text-white">
-                October 2014-June 2022
-              </p>
+              <p className="text-small text-white">Creekside High School</p>
+              <p className="text-small text-white">October 2014-June 2022</p>
             </div>
           </CardHeader>
           <Divider />
@@ -149,7 +192,5 @@ export default function Experience() {
             </Link>
           </CardFooter>
         </Card>
-      </div>
-    </section>
-  );
+      </div> */
 }
