@@ -7,7 +7,10 @@ export default function Projects() {
       <h1 className="text-6xl lg:text-9xl max-w-lg font-bold text-gray-500 my-20 md:my-10 text-center lg:text-left">
         Projects
       </h1>
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:text-white md:text-white">
+      <div
+        className="max-w-6xl mx-auto grid grid-cols-1 sm:text-white md:text-white"
+        style={{ color: "white" }}
+      >
         {userData.projects.map((project, idx) => (
           <div key={idx}>
             <a href={project.link} target="_blank" rel="noreferrer">
