@@ -3,7 +3,7 @@ import userData from "@constants/data";
 
 export default function Projects() {
   return (
-    <section className="bg-gray-800 text-white">
+    <section className="bg-gray-800">
       <h1 className="text-6xl lg:text-9xl max-w-lg font-bold text-gray-500 my-20 md:my-10 text-center lg:text-left">
         Projects
       </h1>
@@ -17,7 +17,7 @@ export default function Projects() {
                 className="rounded-lg shadow-lg w-full h-[500px] object-cover "
               />
             </a>
-            <h1 className="text-2xl font-bold text-center my-5">
+            <h1 className="text-2xl font-bold text-white text-center my-5">
               {project.title}
             </h1>
           </div>
