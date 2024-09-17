@@ -3,6 +3,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { Analytics } from "@vercel/analytics/react"
 
 export default function ContainerBlock({ children, ...customMeta }) {
   const router = useRouter;
@@ -49,6 +50,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
       <main className="bg-gray-800 w-full">
         <Navbar />
         <div>{children}</div>
+        <Analytics />
         <Footer />
       </main>
     </div>
