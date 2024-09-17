@@ -10,8 +10,8 @@ export default function Experience() {
         Experience
       </h1>
 
-      <div className="w-full flex justify-center px-4 md:px-8">
-        <div className="w-full max-w-[80%]">
+      <div className="w-full flex text-white justify-center px-4 md:px-8">
+        <div className="w-full max-w-[80%] color-white">
           <Accordion
             selectionMode="multiple"
             className="flex flex-wrap gap-6 w-full"
