@@ -13,7 +13,7 @@ export default function Experience() {
       <div className="w-full flex text-white justify-center px-4 md:px-8">
         <div className="w-full max-w-[80%] color-white">
           <Accordion
-            selectionMode="multiple"
+            selectionMode="single"
             className="flex flex-wrap gap-6 w-full"
           >
             {data.experience.map((item, index) => (
