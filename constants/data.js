@@ -11,6 +11,7 @@ const userData = {
       title: "Trip Planner",
       link: "https://github.com/iamchristiancollins/TripPlanner",
       imgUrl: "/TripPlanner.png",
+      description: "Collaborative Trip Planning Web Application", 
     },
     {
       title: "AgriDrone",
