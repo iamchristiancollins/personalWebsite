@@ -21,12 +21,6 @@ export default function Projects() {
             Enjoy! I hope you like them.
           </h4>
         </CardHeader>
-        {/* <Image
-          removeWrapper
-          alt="Card background"
-          className="z-0 w-full h-full object-cover"
-          src=
-        /> */}
       </Card>
       <Card className="col-span-12 sm:col-span-4 h-[300px]">
         <CardHeader className="absolute z-10 top-1 flex-col !items-start">
@@ -51,11 +45,11 @@ export default function Projects() {
               src="https://nextui.org/images/breathing-app-icon.jpeg"
             /> */}
             <div className="flex flex-col">
-              <p className="text-tiny text-white/60">Plan Together</p>
-              <p className="text-tiny text-white/60">Travel Together</p>
+              <p className="text-tiny text-white/60">Monitor</p>
+              <p className="text-tiny text-white/60">Grow</p>
             </div>
           </div>
-          <Button radius="full" size="sm">
+          <Button radius="full" size="sm" onClick={() => window.open(userData.projects[1].link, '_blank')}>
             See the Code
           </Button>
         </CardFooter>
@@ -83,12 +77,12 @@ export default function Projects() {
               src="https://nextui.org/images/breathing-app-icon.jpeg"
             /> */}
             <div className="flex flex-col">
-              <p className="text-tiny text-white/60">Plan Together</p>
-              <p className="text-tiny text-white/60">Travel Together</p>
+              <p className="text-tiny text-white/60">Have a Question?</p>
+              <p className="text-tiny text-white/60">Seek an Answer</p>
             </div>
           </div>
-          <Button radius="full" size="sm">
-            See the Code
+          <Button radius="full" size="sm" onClick={() => window.open(userData.projects[2].link, '_blank')}>
+            See the App
           </Button>
         </CardFooter>
       </Card>
@@ -118,12 +112,12 @@ export default function Projects() {
               src="https://nextui.org/images/breathing-app-icon.jpeg"
             /> */}
             <div className="flex flex-col">
-              <p className="text-tiny text-white/60">Plan Together</p>
-              <p className="text-tiny text-white/60">Travel Together</p>
+              <p className="text-tiny text-white/60">Store It</p>
+              <p className="text-tiny text-white/60">Find It</p>
             </div>
           </div>
-          <Button radius="full" size="sm">
-            See the Code
+          <Button radius="full" size="sm" onClick={() => window.open(userData.projects[3].link, '_blank')}>
+            See the App
           </Button>
         </CardFooter>
       </Card>
@@ -157,7 +151,7 @@ export default function Projects() {
               <p className="text-tiny text-white/60">Travel Together</p>
             </div>
           </div>
-          <Button radius="full" size="sm">
+          <Button radius="full" size="sm" onClick={() => window.open(userData.projects[0].link, '_blank')}>
             See the Code
           </Button>
         </CardFooter>
