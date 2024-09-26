@@ -49,7 +49,11 @@ export default function Projects() {
               <p className="text-tiny text-white/60">Grow</p>
             </div>
           </div>
-          <Button radius="full" size="sm" onClick={() => window.open(userData.projects[1].link, '_blank')}>
+          <Button
+            radius="full"
+            size="sm"
+            onClick={() => window.open(userData.projects[1].link, "_blank")}
+          >
             See the Code
           </Button>
         </CardFooter>
@@ -81,7 +85,11 @@ export default function Projects() {
               <p className="text-tiny text-white/60">Seek an Answer</p>
             </div>
           </div>
-          <Button radius="full" size="sm" onClick={() => window.open(userData.projects[2].link, '_blank')}>
+          <Button
+            radius="full"
+            size="sm"
+            onClick={() => window.open(userData.projects[2].link, "_blank")}
+          >
             See the App
           </Button>
         </CardFooter>
@@ -116,7 +124,11 @@ export default function Projects() {
               <p className="text-tiny text-white/60">Find It</p>
             </div>
           </div>
-          <Button radius="full" size="sm" onClick={() => window.open(userData.projects[3].link, '_blank')}>
+          <Button
+            radius="full"
+            size="sm"
+            onClick={() => window.open(userData.projects[3].link, "_blank")}
+          >
             See the App
           </Button>
         </CardFooter>
@@ -151,7 +163,11 @@ export default function Projects() {
               <p className="text-tiny text-white/60">Travel Together</p>
             </div>
           </div>
-          <Button radius="full" size="sm" onClick={() => window.open(userData.projects[0].link, '_blank')}>
+          <Button
+            radius="full"
+            size="sm"
+            onClick={() => window.open(userData.projects[0].link, "_blank")}
+          >
             See the Code
           </Button>
         </CardFooter>
