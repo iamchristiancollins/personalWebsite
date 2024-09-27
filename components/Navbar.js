@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     // flex justify-between items-center fixed top-0 w-full z-50
     <div className="max-w-full mx-auto px-4 py-10 md:py-20">
-      <div className="flex justify-between items-center fixed  top-0 w-3/4 z-50">
+      <div className="flex justify-between items-center fixed top-0 sm:w-3/4 md:w-[95%] z-50">
         <button
           className="md:hidden p-2 text-white"
           onClick={() => setIsOpen(!isOpen)}
@@ -292,7 +292,7 @@ export default function Navbar() {
           </Link>
         </div>
 
-        <div className={`flex flex-row space-x-12 hidden md:block`}>
+        <div className="flex flex-row space-x-12 hidden md:block">
           <a href={userData.socialLinks.instagram}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
