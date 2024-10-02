@@ -54,7 +54,7 @@ const GithubRepoCard = ({ latestRepo }) => {
       <h1 className="font-semibold text-xl text-gray-200">
         {latestRepo.name}
       </h1>
-      <p className="text-base font-normal my-4 text-gray-500">
+      <p className="text-base font-normal my-4 text-gray-400">
         {latestRepo.description}
       </p>
       <a
