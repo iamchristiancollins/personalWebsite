@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import { ThemeProvider } from "next-themes";
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 function MyApp({ Component, pageProps }) {
@@ -8,6 +9,7 @@ function MyApp({ Component, pageProps }) {
     <ThemeProvider defaultTheme="light" attribute="class">
       <Component {...pageProps} />
       <Analytics />
+      <SpeedInsights />
     </ThemeProvider>
   );
 }
