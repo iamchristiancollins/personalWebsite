@@ -105,6 +105,7 @@ const userData = {
     github: "https://github.com/iamchristiancollins",
     facebook: "https://facebook.com/",
     peerlist: "https://peerlist.io/christianc",
+    bluesky: "https://bsky.app/profile/iamchristiancollins.com",
   },
 };
 
