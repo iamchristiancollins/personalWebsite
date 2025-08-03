@@ -41,9 +41,23 @@ const userData = {
   },
   experience: [
     {
+      title: "Backend Engineering Intern",
+      company: "Shipt",
+      year: "June 2025 - August 2025",
+      companyLink: "https://shipt.com/",
+      desc: [
+        "- Built Go web services with Postgres database for ACH payment processing, implementing secure OAuth authentication and Wells Fargo API integration",
+        "- Architected asynchronous processing pipeline using Kafka topics and webhooks with idempotency patterns to ensure transaction consistency and reliable retries",
+        "- Developed comprehensive test coverage through TDD practices, enabling confident large-scale refactors and system reliability",
+        "- Collaborated with Staff Engineer using pair programming to deliver robust transaction management and guaranteed information delivery",
+      ],
+      image:
+        "https://images.seeklogo.com/logo-png/42/1/shipt-logo-png_seeklogo-423378.png",
+    },
+    {
       title: "Software Developer",
       company: "DarkTower",
-      year: "2024-Present",
+      year: "February 2024 - May 2025",
       companyLink: "https://getdarktower.com/",
       desc: [
         "- Expand and develop new tools for analysts to aid in forensic investigations",
@@ -59,7 +73,7 @@ const userData = {
     {
       title: "Teaching Assistant",
       company: "UAB Department of Computer Science",
-      year: "2023-Present",
+      year: "August 2023 - April 2025",
       companyLink: "https://uab.edu",
       desc: [
         "- Support professors in delivering courses in Algorithms and Data Structures, Computer Organization and Assembly Language, and Systems Programming",
