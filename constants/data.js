@@ -90,8 +90,8 @@ const userData = {
       year: "2025",
       companyLink: "https://uab.edu",
       desc: [
-        "Pursuing a Postbaccalaureate degree in Computer Science with a GPA of 4.0. Nobody asks this but it's okay.",
-        "Have taken courses in Software Engineering, Databases, Web Application Development, and more.",
+        "Received a Postbaccalaureate degree in Computer Science with a GPA of 4.0.",
+        "Took courses in Software Engineering, Databases, Web Application Development, Systems, and more.",
       ],
       image:
         "https://content.sportslogos.net/logos/35/879/full/1518_uab_blazers-primary-2015.png",
